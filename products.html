@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products | TrendThreads</title>
+  <meta name="description" content="Browse TrendThreads products: Men's, Women's and Accessories collections. Add items to cart and checkout.">
+  <link rel="canonical" href="https://sima267.github.io/ST10481861_WEDE5020_PART2/products.html">
+  <meta property="og:title" content="TrendThreads Products">
+  <meta property="og:description" content="Browse TrendThreads products: Men's, Women's and Accessories collections.">
+  <meta property="og:url" content="https://sima267.github.io/ST10481861_WEDE5020_PART2/products.html">
+  <meta property="og:image" content="https://sima267.github.io/ST10481861_WEDE5020_PART2/images/og-image.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "TrendThreads",
+    "url": "https://sima267.github.io/ST10481861_WEDE5020_PART2",
+    "logo": "https://sima267.github.io/ST10481861_WEDE5020_PART2/logo.png"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">TrendThreads</div>
+    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="container featured">
+    <h2>Our Collections</h2>
+    <div class="filters">
+      <button class="filter-btn btn" data-category="all">All</button>
+      <button class="filter-btn btn" data-category="men">Men</button>
+      <button class="filter-btn btn" data-category="women">Women</button>
+      <button class="filter-btn btn" data-category="accessories">Accessories</button>
+    </div>
+
+    <!-- Product grid used by script.js -->
+    <div id="product-grid" class="product-list" aria-live="polite"></div>
+
+    <!-- Cart sidebar expected by script.js -->
+    <aside id="cart-sidebar" class="cart-sidebar" aria-hidden="true">
+      <h3>Your Cart</h3>
+      <div id="cart-items"></div>
+      <p id="cart-total">Total: R0</p>
+      <button id="checkout-btn" class="checkout">Checkout</button>
+    </aside>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: info@trendthreads.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Delivery</h3>
+        <p>Nationwide within 3–5 working days.</p>
+      </div>
+      <div class="footer-section">
+        <h3>© 2025 TrendThreads</h3>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enquiry | TrendThreads</title>
+  <meta name="description" content="Send an enquiry to TrendThreads about orders, products, returns or general enquiries.">
+  <link rel="canonical" href="https://sima267.github.io/ST10481861_WEDE5020_PART2/enquiry.html">
+  <meta property="og:title" content="Enquiry — TrendThreads">
+  <meta property="og:description" content="Send an enquiry to TrendThreads about orders, products, returns or general enquiries.">
+  <meta property="og:url" content="https://sima267.github.io/ST10481861_WEDE5020_PART2/enquiry.html">
+  <meta property="og:image" content="https://sima267.github.io/ST10481861_WEDE5020_PART2/images/og-image.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="enquiry-form.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TrendThreads",
+    "url": "https://sima267.github.io/ST10481861_WEDE5020_PART2",
+    "logo": "https://sima267.github.io/ST10481861_WEDE5020_PART2/logo.png"
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">TrendThreads</div>
+    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="enquiry.html" class="active">Enquiry</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero small-hero">
+    <h1>Enquiry Form</h1>
+    <p>Have questions about your order or our collections? Reach out here.</p>
+  </section>
+
+  <!-- Enquiry Form (UPDATED) -->
+  <section class="container contact-form">
+    <form id="enquiryForm" aria-label="Enquiry form">
+      <label for="e_name">Full name</label>
+      <input id="e_name" name="name" type="text" placeholder="Full Name" required>
+
+      <label for="e_email">Email</label>
+      <input id="e_email" name="email" type="email" placeholder="Email Address" required>
+
+      <label for="e_topic">Topic</label>
+      <select id="e_topic" name="topic" required>
+        <option value="">Select a Topic</option>
+        <option value="order">Order Status</option>
+        <option value="product">Product Information</option>
+        <option value="returns">Returns & Exchanges</option>
+        <option value="general">General Enquiry</option>
+      </select>
+
+      <label for="e_quantity">Quantity (if applicable)</label>
+      <input id="e_quantity" name="quantity" type="number" min="1" placeholder="1">
+
+      <label for="e_date">Preferred date (optional)</label>
+      <input id="e_date" name="date" type="date">
+
+      <label for="e_message">Message</label>
+      <textarea id="e_message" name="message" rows="5" placeholder="Your question..." required></textarea>
+
+      <button type="submit" class="btn">Send Enquiry</button>
+    </form>
+
+    <div id="enquiryResult" class="enquiry-result" aria-live="polite"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+
+      <!-- Payment Methods -->
+      <div class="footer-section">
+        <h3>Safe Payment</h3>
+        <div class="payment-icons">
+          <img src="paypal.png" alt="PayPal">
+          <img src="visa.png" alt="Visa">
+          <img src="mastercard.png" alt="MasterCard">
+          <img src="eft.png" alt="EFT">
+        </div>
+      </div>
+
+      <!-- Delivery Info -->
+      <div class="footer-section">
+        <h3>Delivery Info</h3>
+        <p>Nationwide delivery within 3–5 working days.<br>
+        Free delivery on orders over R500.</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><img src="facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="youtube.png" alt="YouTube"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 TrendThreads Clothing. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | TrendThreads</title>
+  <meta name="description" content="Contact TrendThreads — Visit our branches in Johannesburg, Port Elizabeth and Cape Town or send us a message.">
+  <link rel="canonical" href="https://sima267.github.io/ST10481861_WEDE5020_PART2/contact.html">
+  <meta property="og:title" content="Contact — TrendThreads">
+  <meta property="og:description" content="Contact TrendThreads — Visit our branches in Johannesburg, Port Elizabeth and Cape Town or send us a message.">
+  <meta property="og:url" content="https://sima267.github.io/ST10481861_WEDE5020_PART2/contact.html">
+  <meta property="og:image" content="https://sima267.github.io/ST10481861_WEDE5020_PART2/images/og-image.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="contact-form.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TrendThreads",
+    "url": "https://sima267.github.io/ST10481861_WEDE5020_PART2",
+    "logo": "https://sima267.github.io/ST10481861_WEDE5020_PART2/images/logo.png",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+27-11-123-4567",
+      "contactType": "customer service",
+      "areaServed": "ZA"
+    }]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">TrendThreads</div>
+    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero small-hero">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you. Visit one of our branches or reach out to us directly.</p>
+  </section>
+
+  <!-- Locations -->
+  <section class="grid container">
+    <!-- Johannesburg Office -->
+    <div class="card location-card">
+      <h3>Johannesburg Office</h3>
+      <p>30 Fox Street, Johannesburg CBD, 2001</p>
+      <p>Phone: +27 11 123 4567</p>
+      <p>Email: johannesburg@trendthreads.com</p>
+      <iframe
+        title="Johannesburg office map"
+        src="https://www.google.com/maps?q=30+Fox+Street,+Johannesburg&output=embed"
+        width="100%"
+        height="250"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Port Elizabeth -->
+    <div class="card location-card">
+      <h3>Port Elizabeth</h3>
+      <p>15 Rink Street, Central, Port Elizabeth, 6001</p>
+      <p>Phone: +27 41 234 5678</p>
+      <p>Email: portelizabeth@trendthreads.com</p>
+      <iframe
+        title="Port Elizabeth map"
+        src="https://www.google.com/maps?q=15+Rink+Street,+Port+Elizabeth&output=embed"
+        width="100%"
+        height="250"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Cape Town -->
+    <div class="card location-card">
+      <h3>Cape Town</h3>
+      <p>47 Bree Street, Cape Town, 8001</p>
+      <p>Phone: +27 21 345 6789</p>
+      <p>Email: capetown@trendthreads.com</p>
+      <iframe
+        title="Cape Town map"
+        src="https://www.google.com/maps?q=47+Bree+Street,+Cape+Town&output=embed"
+        width="100%"
+        height="250"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Contact Info & Social Media -->
+  <section class="contact-info container">
+    <h2>Reach Us</h2>
+    <p>Follow us on social media or give us a call. We're here to help!</p>
+    <ul class="social-media">
+      <li><a href="https://www.facebook.com/TrendThreads" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.instagram.com/TrendThreads" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.twitter.com/TrendThreads" target="_blank" rel="noopener">Twitter</a></li>
+      <li><a href="mailto:info@trendthreads.com">Email Us</a></li>
+      <li>Phone: +27 11 123 4567</li>
+    </ul>
+  </section>
+
+  <!-- Contact Form (NEW) -->
+  <section class="container">
+    <form id="contactForm" class="contact-form" aria-label="Contact form">
+      <label for="c_name">Full name</label>
+      <input id="c_name" name="name" type="text" placeholder="Full Name" required>
+
+      <label for="c_email">Email address</label>
+      <input id="c_email" name="email" type="email" placeholder="Email Address" required>
+
+      <label for="c_phone">Phone (optional)</label>
+      <input id="c_phone" name="phone" type="tel" placeholder="+27 11 123 4567">
+
+      <label for="c_type">Type of message</label>
+      <select id="c_type" name="type" required>
+        <option value="">Select Message Type</option>
+        <option value="general">General Enquiry</option>
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option>
+      </select>
+
+      <label for="c_message">Message</label>
+      <textarea id="c_message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+      <p class="privacy-note">By sending this message you agree to be contacted by TrendThreads. We will only use your details to respond. (POPIA compliant)</p>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+
+      <!-- Payment Methods -->
+      <div class="footer-section">
+        <h3>Safe Payment</h3>
+        <div class="payment-icons">
+          <img src="paypal.png" alt="PayPal">
+          <img src="visa.png" alt="Visa">
+          <img src="mastercard.png" alt="MasterCard">
+          <img src="eft.png" alt="EFT">
+        </div>
+      </div>
+
+      <!-- Company Info -->
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@trendthreads.com</p>
+        <p>Phone: +27 11 123 4567</p>
+        <p>Follow us on social media:</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/TrendThreads" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/TrendThreads" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.twitter.com/TrendThreads" target="_blank" rel="noopener">Twitter</a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-section">
+        <h3>© 2025 TrendThreads</h3>
+        <p>All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
